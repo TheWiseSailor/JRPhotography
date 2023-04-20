@@ -1,0 +1,37 @@
+body {
+    background-color: rgb(37, 37, 37);
+}
+
+h1{
+    color: white;
+    /* typography*/
+    font-weight: 300;
+    font-size: 1.7rem;
+    margin-top: 0%;
+}
+
+* {
+    box-sizing: border-box;
+    transition: all ease-in-out 250ms;
+}
+
+main {
+    display:flex;
+    margin-top: 2%;
+    flex-wrap: wrap;
+}
+
+header-1 {
+    font-display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: black;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 0;
+    float: center;
+}
+
