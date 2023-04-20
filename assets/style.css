@@ -1,7 +1,8 @@
+/*body section*/
 body {
     background-color:#232323;
   }
-  
+  /*h section*/
   h1 {
     color: maroon;
     margin-left: 0;
@@ -12,13 +13,15 @@ font-weight: 300;
 font-size: 1.7rem;
 margin-top: 0;
 }
-/* looked on o our daily vcsode that we use for zoom and do challenges. and applied the main apllication to where all content fits any screen regardless of how big the webpage is*/
+/* looked on our daily vcsode that we use for zoom and do challenges. and applied the main apllication to where all content fits any screen regardless of how big the webpage is*/
+/*header section*/
 header {
     display: flex;
     margin-top: 2%;
     flex-wrap: wrap;
     text-align: right;
 }
+/*nav section*/
 nav {
     position:absolute;
     top: 0;
@@ -52,15 +55,12 @@ nav a:focus {
 color: #fff;
 }
     
-@media (min-width: 60rem) {
-.logo {
-float: left;
-}
+
     
 nav {
 float: right;
 }
-}
+
 * {
 box-sizing: border-box;
 transition: all ease-in-out 250ms;
@@ -114,13 +114,6 @@ width: 33.333334%;
 float: left;
 }
 
-@media (min-width: 40rem) {
-[class^="col-"] {
-  float: left;
-  padding: 0 0.5em;
-  margin-top: 0;
-}
-
 [class^="col-"]:first-child {
   padding-left: 0;
 }
@@ -131,17 +124,19 @@ float: left;
 
 .col-3 {
   width: 50%;
+  padding-top: 50px;
 }
 
 .col-1 {
   width: 16.6666%;
 }
-}
+
 
 
 p {
-margin-top: 0;
+margin-top: 50px;
 line-height: 2.75;
+color: #fff;
 }
 
 p:last-of-type {
@@ -169,21 +164,15 @@ color:#000;
 }
 
 .unstyled-list {
-margin: 0;
+margin-top:50px;
 padding: 0;
 list-style-type: none;
-}
-
-@media (min-width: 60rem) {
-p {
-  font-size: 1.2rem;
-  line-height: 1.6;
 }
 
 .title {
   font-size: 3.7rem;
 }
-}
+
 
 /*buttons*/
 .button {
@@ -206,11 +195,6 @@ border-width: 2px;
 border-style: solid;
 padding: 0.5em 1.75em;
 
-}
-@media (min-width: 60rem) {
-.button {
-  font-size: 1.5rem;
-}
 }
 
 .button-small {
@@ -272,13 +256,6 @@ padding: 14em 0;
 color: #000;
 }
 
-@media (min-width: 60rem) {
-.home-hero {
-  height: 100vh;
-  padding-top: 35vh;
-}
-}
-
 /*home-about*/
 .home-about-textbox {
 background-color: #232323;
@@ -301,10 +278,6 @@ background: #232323;
 padding: 0 0.145em;
 }
 
-@media (min-width: 25rem) {
-h1 {
-  font-size: 2rem;
-}
 
 .home-about-textbox {
   padding: 5.5em;
@@ -315,12 +288,8 @@ h1 {
   top: 0.6em;
   padding: 0 0.325em;
 }
-}
 
-@media (min-width: 60rem) {
-h1 {
-  font-size: 2.5rem;
-}
+
 
 .home-about {
   background-image: url(https://images.unsplash.com/photo-1506929562872-bb421503ef21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1968&q=80);
@@ -346,7 +315,6 @@ h1 {
   transform: translateX(0);
 
 }
-}
 
 /* portfolio */
 
@@ -371,41 +339,30 @@ display: block;
 color:rgb(0, 0, 0);
 margin:auto;
 width: 100%;
+height: 100%;
 
 
 }
 
 .port-desc {
 position: absolute;
-z-index: 100;
+padding-bottom: 2em;
 bottom: 0em;
 left: 0em;
 right: 0em;
 color: white;
 background: rgba(153, 142, 142, 0.6);
-padding-bottom: 2em;
 
+/*padding-bottom: 2em;
+z-index: 100;
+*/
 }
 
 .port-desc p {
 margin: 1em;
-
-
 }
 
-@media (min-width: 37rem) {
-.port-item {
-  width: 50%;
-  float: left;
- 
-}
-}
 
-@media (min-width: 60rem) {
-.port-item {
-  width: 33.3333334%;
-  overflow: hidden;
-}
 
 .port-desc {
   transform: translateY(150%);
@@ -414,7 +371,7 @@ margin: 1em;
 .port-item:hover .port-desc {
   transform: translateY(0%);
 }
-}
+
 .author{
 font-style: italic;
 }
@@ -434,24 +391,65 @@ color: #fff;
 text-align: left;
 padding: 4em 0;
 font-style:italic;
+
 }
 footer p {
 font-size: 20px;
 font-style:italic;
-padding-bottom: 200px;
+padding-bottom: 100px;
+padding-top: 200px;
 
 }
 
 p2{
 color:#ffffff
 }
-.Website{
-color:#ffffff;
-text-decoration: none;
-}
-.Desktop-version{
-color:#ffffff;
-text-decoration: none;
-}
 
 
+/* media sections*/
+@media (min-width: 40rem) {
+    [class^="col-"] {
+      float: left;
+      padding: 0 0.5em;
+      margin-top: 0;
+    }
+}    
+@media (min-width: 60rem) {
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+}
+@media (min-width: 60rem) {
+    .home-hero {
+      height: 100vh;
+      padding-top: 35vh;
+    }
+    }
+
+@media (min-width: 60rem) {
+    h1 {
+      font-size: 2.5rem;
+    }
+
+@media (min-width: 37rem) {
+    .port-item {
+      width: 50%;
+      float: left;
+     
+    }
+    }
+    
+    @media (min-width: 60rem) {
+    .port-item {
+      width: 33.3333334%;
+      overflow: hidden;
+    }
+}
+
+    @media (min-width: 60rem) {
+        .logo {
+        float: left;
+        }
+    }
+}
